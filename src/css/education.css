@@ -1,0 +1,290 @@
+#education {
+    height: auto;
+    width: 100vw;
+    padding: 0 5vw;
+    /* background-color: darkorchid; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+}
+
+#education hr {
+    margin: 2rem 0;
+}
+
+.education-outer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education-inner {
+    width: 25vw;
+    border-radius: 5px;
+    padding: 2vw;
+}
+
+@media (max-width: 576px) {
+    .education-outer {
+        /* flex-direction: column; */
+    }
+
+    .education-inner {
+        width: 90vw;
+        border-radius: 5px;
+        margin: 5vw 0;
+        padding: 5vw;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* small */
+    body {
+        /* background-color: black;
+        color: white; */
+    }
+
+    .education-outer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .education-inner {
+        width: 75vw;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* medium */
+    body {
+        /* background-color: red;
+        color: white; */
+    }
+
+    .education-outer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .education-inner {
+        width: 75vw;
+    }
+
+    .education-inner h2 {
+        /* text-align: start !important; */
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    /* large */
+    body {
+        /* background-color: blue; */
+    }
+
+    .education-outer {
+        justify-content: start;
+    }
+
+    .education-inner {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    /* extra large */
+    body {
+        /* background-color: yellow; */
+    }
+
+    .education-outer {
+        /* justify-content: center; */
+    }
+
+    .education-inner {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#education .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#education .card {
+    /* background-color: crimson; */
+    position: absolute;
+    position: relative;
+    border: none;
+}
+
+#education section {
+    /* opacity: 0; */
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-education-card-left {
+    opacity: 1;
+    animation: slideFromLeft 1s ease-in-out;
+}
+
+.animate-education-card-middle {
+    opacity: 1;
+    animation: slideFromBottom 1s ease-in-out;
+}
+
+.animate-education-card-right {
+    opacity: 1;
+    animation: slideFromRight 1s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* for animation */
+@media (max-width: 576px) {
+    #education .middle-card {
+        animation: slideFromBottom 1s ease-in-out;
+    }
+
+    @keyframes slideFromBottom {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    #education .right-card {
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    @keyframes slideFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    #education section {
+        /* opacity: 0; */
+        /* transform: translateY(20px); */
+        transition: opacity 1s, transform 1s;
+    }
+
+    .animate-education-card-left {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    .animate-education-card-middle {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromBottom 1s ease-in-out;
+    }
+
+    .animate-education-card-right {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    /* #education-section-comp {
+    } */
+
+    @keyframes slideFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromBottom {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}

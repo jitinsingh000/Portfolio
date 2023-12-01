@@ -1,0 +1,242 @@
+#contact {
+    height: auto;
+    width: 100vw;
+    padding: 0 5vw;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border: none !important;
+    border-radius: 0;
+    border-bottom: 1px solid !important;
+}
+
+.contact-btn {
+    padding: .5vw 1vw;
+}
+
+.contact-btn :hover {
+    color: #0072ef;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: large;
+}
+
+.contact-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact .right-card {
+    width: 90vw;
+}
+
+#contact-section-comp-card-right {
+    width: 90vw;
+}
+
+@media (max-width: 576px) {
+    #contact #name {
+        margin-bottom: 6vw;
+    }
+    
+    .contact-btn {
+        padding: 1vh 2vh;
+    }
+
+    .contact-ul{
+        flex-direction: column;
+    }
+
+    #contact section {
+        /* opacity: 0; */
+        /* transform: translateY(20px); */
+        transition: opacity 1s, transform 1s;
+    }
+
+    .animate-contact-card-left {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    .animate-contact-card-right {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromRight 1s ease-in-out;
+    }
+
+    @keyframes slideFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* small */
+    body {
+        /* background-color: black;
+        color: white; */
+    }
+
+    #contact #name {
+        margin-bottom: 3vh;
+    }
+
+    .contact-btn {
+        padding: 1.5vw 3vw;
+    }
+    .contact-ul{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* medium */
+    body {
+        /* background-color: red; */
+    }
+
+    .contact-btn {
+        padding: 1.5vw 3vw;
+    }
+
+}
+
+
+
+
+#contact .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contact .card {
+    position: absolute;
+    position: relative;
+    border: none;
+}
+
+#contact .left-card {
+    animation: slideFromLeft 1s ease-in-out;
+}
+
+#contact .right-card {
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    #contact .right-card {
+        justify-content: center;
+    }
+}
+
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        left: 0;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        right: 0;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#contact section {
+    /* opacity: 0; */
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-contact-card-left {
+    opacity: 1;
+    animation: slideFromLeft 1s ease-in-out;
+}
+
+.animate-contact-card-middle {
+    opacity: 1;
+    animation: slideFromBottom 1s ease-in-out;
+}
+
+.animate-contact-card-right {
+    opacity: 1;
+    animation: slideFromRight 1s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

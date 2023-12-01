@@ -1,0 +1,390 @@
+#home {
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    padding: 0 5vw;
+}
+
+#home a:hover {
+    color: #0072ef !important;
+}
+
+.home-left {
+    /* position: absolute; for animation */
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 auto;
+    /* animation: left 1s ease-in 1s 1 forwards; */
+}
+
+/* .home-left p,.home-left h1,.home-left h3 ,.home-left div{
+    width: 35vw;
+} */
+.home-left h1 {
+    /* text-shadow: 2px 2px #666666a3; */
+    text-shadow: 1px 1px 2px #000000d7;
+}
+
+.home-left p {
+    width: 40vw;
+}
+
+.home-right {
+    /* position: absolute; for animation */
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    /* animation: right 1s ease-in 1s 1 forwards; */
+}
+
+.home-right img {
+    /* height: 80vh; */
+    height: 42vw;
+    border: 15px solid black;
+    border-radius: 20%;
+
+
+}
+
+.drop-shadow {
+    filter: drop-shadow(7px 7px 7px #666666);
+    -webkit-filter: drop-shadow(7px 7px 7px #666666);
+}
+
+.role-heading {
+    margin: 2vh 0;
+}
+
+.roles {
+    width: 60vw;
+    transform: rotate(270deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: crimson; */
+    position: absolute;
+    left: 20vw;
+    right: 35vw;
+    bottom: 60vh;
+}
+
+
+
+
+
+
+
+
+#typewriter {
+    color: #0072ef;
+    font-weight: bold;
+}
+
+#cursor {
+    color: #0072ef;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .roles {
+        width: 90vw;
+        transform: rotate(0deg);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 78vh;
+        left: 5vw;
+    }
+
+    #home {
+        padding-top: 5vh;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+
+    .home-left,
+    .home-right {
+        width: 90vw;
+    }
+
+    .home-left p {
+        width: 90vw;
+        /* font-size: small !important; */
+    }
+
+    .home-right img {
+        display: none;
+    }
+
+    .role-heading {
+        margin: 1vh 0;
+    }
+
+    .role-heading::after {
+        content: "";
+        display: block;
+        /* background-image: url('../images/jitin-portrait.png'); */
+        /* background-image: url('../images/jitin-portrait.png'); */
+        background-image: url('../images/jitin.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 55vh; */
+        width: 90vw;
+        height: 50vh;
+        width: 70vmin;
+        height: 70vmin;
+        margin: 5vw auto;
+        border: 15px solid black;
+        border-radius: 20%;
+        background-color: rgb(0, 0, 0);
+        /* background-color: #0073ef5e; */
+        /* background-color: rgba(0, 0, 0, 0.5); */
+
+        filter: drop-shadow(7px 7px 7px #666666);
+        -webkit-filter: drop-shadow(7px 7px 7px #666666);
+    }
+
+    #home section {
+        /* opacity: 0; */
+        /* transform: translateY(20px); */
+        transition: opacity 1s, transform 1s;
+    }
+
+    .animate-home-card-left {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    .animate-home-card-right {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromRight 1s ease-in-out;
+    }
+
+    @keyframes slideFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* small */
+    body {
+        /* background-color: black;
+        color: white; */
+    }
+
+    .roles {
+        width: 90vw;
+        transform: rotate(0deg);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 78vh;
+        left: 5vw;
+    }
+
+    #home {
+        padding-top: 5vh;
+        flex-direction: column;
+        height: auto;
+        width: 100vw;
+    }
+
+    .home-left,
+    .home-right {
+        width: 90vw;
+    }
+
+    .home-left p {
+        width: 90vw;
+    }
+
+    .role-heading {
+        margin: 1vh 0;
+    }
+
+    .home-right img {
+        display: none;
+    }
+
+    .role-heading::after {
+        content: "";
+        display: block;
+        /* background-image: url('../images/jitin-portrait.png'); */
+        /* background-image: url('../images/jitin-portrait.png'); */
+        background-image: url('../images/jitin.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 55vh; */
+        width: 90vw;
+        height: 50vh;
+        width: 70vmin;
+        height: 70vmin;
+        margin: 5vw auto;
+        border: 15px solid black;
+        border-radius: 20%;
+        background-color: rgb(0, 0, 0);
+        /* background-color: #0073ef5e; */
+        /* background-color: rgba(0, 0, 0, 0.5); */
+
+        filter: drop-shadow(7px 7px 7px #666666);
+        -webkit-filter: drop-shadow(7px 7px 7px #666666);
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* small */
+    body {
+        /* background-color: red; */
+
+    }
+
+    .role-heading {
+        font-size: x-large;
+    }
+}
+
+
+
+@keyframes left {
+    0% {
+        left: 0vw;
+        top: auto;
+    }
+
+    100% {
+        top: auto;
+        left: 5vw;
+    }
+}
+
+@keyframes right {
+    0% {
+        right: 0vw;
+    }
+
+    100% {
+        right: 5vw;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    /* large */
+    body {
+        /* background-color: blue; */
+    }
+
+    .role-heading {
+        font-size: xx-large;
+    }
+}
+
+
+
+
+#home .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#home .card {
+    /* background-color: #3498db; */
+    position: absolute;
+    position: relative;
+    border: none;
+}
+
+#home .left-card {
+}
+
+#home .right-card {
+    flex-direction: row;
+}
+
+
+
+
+#home section {
+    /* opacity: 0; */
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-home-card-left {
+    opacity: 1;
+    animation: slideFromLeft 1s ease-in-out;
+}
+
+.animate-home-card-right {
+    opacity: 1;
+    animation: slideFromRight 1s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

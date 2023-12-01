@@ -1,0 +1,330 @@
+#skills {
+    height: auto;
+    width: 100vw;
+    padding: 0 5vw;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+}
+
+#skills hr {
+    margin: 2rem 0;
+}
+
+.skills-outer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-inner {
+    width: 25vw;
+    border-radius: 5px;
+    /* height: 50vh; */
+    padding: 2vw;
+}
+
+#skills img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+}
+
+
+
+
+
+
+
+#skills .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#skills .card {
+    /* background-color: #3498db; */
+    position: absolute;
+    position: relative;
+    border: none;
+}
+
+#skills .left-card {
+}
+
+
+
+
+#skills section {
+    /* opacity: 0; */
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-skills-card-left {
+    opacity: 1;
+    animation: slideFromLeft 1s ease-in-out;
+}
+
+.animate-skills-card-middle {
+    opacity: 1;
+    animation: slideFromBottom 1s ease-in-out;
+}
+.animate-skills-card-right {
+    opacity: 1;
+    animation: slideFromRight 1s ease-in-out;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 576px) {
+    .skills-outer {
+        /* flex-direction: column; */
+    }
+
+    .skills-inner {
+        width: 90vw;
+        /* height: 50vh; */
+        /* color: black; */
+        border-radius: 5px;
+        margin: 5vw 0;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .skills-row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* small */
+    body {
+        /* background-color: black; */
+        /* color: white; */
+    }
+
+    .skills-outer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-inner {
+        width: 75vw;
+    }
+
+    .skills-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* medium */
+    body {
+        /* background-color: red; */
+    }
+
+    .skills-outer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-inner {
+        width: 75vw;
+    }
+
+    .skills-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+    /* large */
+    body {
+        /* background-color: blue; */
+    }
+
+    .skills-outer {
+        justify-content: center;
+    }
+
+    .skills-inner {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    /* extra large */
+    body {
+        /* background-color: yellow; */
+    }
+
+    .skills-outer {
+        justify-content: center;
+    }
+
+    .skills-inner {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* for animation */
+@media (max-width: 576px) {
+    #skills .middle-card {
+        animation: slideFromBottom 1s ease-in-out;
+    }
+
+    @keyframes slideFromBottom {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    #skills .right-card {
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    @keyframes slideFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    #skills section {
+        /* opacity: 0; */
+        /* transform: translateY(20px); */
+        transition: opacity 1s, transform 1s;
+    }
+
+    .animate-skills-card-left {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    .animate-skills-card-middle {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromBottom 1s ease-in-out;
+    }
+
+    .animate-skills-card-right {
+        opacity: 1;
+        /* transform: translateY(0); */
+        animation: slideFromLeft 1s ease-in-out;
+    }
+
+    /* #education-section-comp {
+    } */
+
+    @keyframes slideFromLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes slideFromBottom {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideFromRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
