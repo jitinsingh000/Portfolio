@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jitinsingh000.github.io/personal-portfolio",
-  "name": "personal-portfolio",
+  "homepage": "https://jitinsingh000.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

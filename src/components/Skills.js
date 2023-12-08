@@ -73,7 +73,7 @@ export default function Skills() {
                             <div className='skills-row d-flex justify-content-around my-3'>
                                 <div className='d-flex flex-column text-center'>
                                     <img src={bootstrap} alt="" className='mx-auto' />
-                                    <p>BootStrap</p>
+                                    <p>BootStrap CSS</p>
                                 </div>
                                 <div className='d-flex flex-column text-center'>
                                     <img src={reactLogo} alt="" className='mx-auto' />
@@ -136,8 +136,8 @@ export default function Skills() {
                                     <p>Chrome DevTools</p>
                                 </div>
                                 <div className='d-flex flex-column  text-center'>
-                                    <img src={gitNGithub} alt="" className='mx-auto' style={{border:'5px solid #161716',borderRadius:'50%'}}/>
-                                    <p>Git & Github</p>
+                                    <img src={gitNGithub} alt="" className='mx-auto' /* style={{border:'5px solid #161716',borderRadius:'50%'}} *//>
+                                    <p>Git & GitHub</p>
                                 </div>
                             </div>
                         </div>
