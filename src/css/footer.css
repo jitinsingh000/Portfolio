@@ -85,17 +85,15 @@ h3 {
 
 .animate-footer-comp {
     opacity: 1;
-    animation: slideFromBottom 1s ease-in-out;
+    animation: opacityZeroToOne 1s ease-in-out;
 }
 
-@keyframes slideFromBottom {
+@keyframes opacityZeroToOne {
     from {
-        transform: translateY(20px);
         opacity: 0;
     }
 
     to {
-        transform: translateY(0);
         opacity: 1;
     }
 }
