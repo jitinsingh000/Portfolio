@@ -84,7 +84,7 @@ export default function Home() {
                         I am a <b>fresher</b> who is searching for an <b>internship</b> for the role of <b>MERN Full Stack Web Developer</b> in a reputed company or start-up where I can apply my skills as well as improve them and can gain knowledge and experience in this field.
                     </p>
                     <div className='resume-btns d-flex'>
-                        <a style={{ backgroundColor: 'black' }} href="https://drive.google.com/file/d/186BYOTt_5w6KMi3lOL6247_tQSPXP3Rh/view?usp=sharing" className='btn px-3 py-2 text-white'>Resume</a>
+                        <a style={{ backgroundColor: 'black' }} href="https://drive.google.com/file/d/18Jc-psNRS5sioo3t6RrFbS3LcXrnQvxG/view?usp=sharing" className='btn px-3 py-2 text-white'>Resume</a>
                         {/* <a style={{ backgroundColor: 'black' }} href={resume} className='btn p-3 ms-3 text-white'>Download Resume</a> */}
                     </div>
                 </section>
