@@ -3,53 +3,53 @@ import '../css/contact.css';
 
 export default function Contact() {
 
-    // const [data, setData] = useState({
-    //     name: "",
-    //     email: "",
-    //     subject: "",
-    //     message: ""
-    // })
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+    });
 
-    // const onChange = (event) => {
-    //     // console.log(event.target);
-    //     setData({ ...data, [event.target.name]: event.target.value })
-    // }
+    const onChange = (event) => {
+        // console.log(event.target);
+        setData({ ...data, [event.target.name]: event.target.value })
+    }
 
-    // const onSubmitHandler = async (event) => {
-    //     event.preventDefault();
-    //     try {
-    //         const message = {
-    //             name: data.name,
-    //             email: data.email,
-    //             subject: data.subject,
-    //             message: data.message
-    //         }
-    //         const response = await fetch(`http:127.0.0.1:5000/message`, {
-    //             method: "POST",
-    //             headers: {
-    //                 "Content-Type": "application/json"
-    //             },
-    //             body: JSON.stringify(message),
-    //         });
-    //         const json = await response.json();
+    const onSubmitHandler = async (event) => {
+        event.preventDefault();
+        try {
+            const message = {
+                name: data.name,
+                email: data.email,
+                subject: data.subject,
+                message: data.message
+            }
+            const response = await fetch(`http://127.0.0.1:5000/message`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(message),
+            });
+            const json = await response.json();
 
-    //         if (!json.success) {
-    //             alert("Failed - Message Not Sent");
-    //         } else {
-    //             alert("Message Sent Successfully");
-    //             setData({
-    //                 name: "",
-    //                 email: "",
-    //                 subject: "",
-    //                 message: ""
-    //             })
-    //         }
-    //     }
-    //     catch (err) {
-    //         console.log(err)
-    //     }
+            if (!json.success) {
+                alert("Failed - Message Not Sent");
+            } else {
+                alert("Message Sent Successfully");
+                setData({
+                    name: "",
+                    email: "",
+                    subject: "",
+                    message: ""
+                })
+            }
+        }
+        catch (err) {
+            console.log(err)
+        }
 
-    // }
+    }
 
     // animation js
     const [animatedSections, setAnimatedSections] = useState([]);
@@ -91,26 +91,26 @@ export default function Contact() {
                                 <div className="row">
                                     <div className="contact-name-input col-md-6">
                                         <div className=" md-form mb-0">
-                                            <input type="text" id="name" name="name" className="form-control" placeholder='Your name' required onChange={onChange} value={data.name} />
+                                            <input type="text" id="name" name="name" className="form-control" placeholder='Your Name' required onChange={onChange} value={data.name} />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="md-form mb-0">
-                                            <input type="text" id="email" name="email" className="form-control" placeholder='Your email' required onChange={onChange} value={data.email} />
+                                            <input type="text" id="email" name="email" className="form-control" placeholder='Your Email' required onChange={onChange} value={data.email} />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row mt-4">
                                     <div className="col-md-12">
                                         <div className="md-form mb-0">
-                                            <input type="text" id="subject" name="subject" className="form-control" placeholder='Subject' required onChange={onChange} value={data.subject} />
+                                            <input type="text" id="subject" name="subject" className="form-control" placeholder='Inquiry Concern' required onChange={onChange} value={data.subject} />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row mt-4">
                                     <div className="col-md-12">
                                         <div className="md-form">
-                                            <textarea type="text" id="message" name="message" rows={2} className="form-control md-textarea" placeholder='Your message' required onChange={onChange} value={data.message} />
+                                            <textarea type="text" id="message" name="message" rows={2} className="form-control md-textarea" placeholder='Your Message' required onChange={onChange} value={data.message} />
                                         </div>
                                     </div>
                                 </div>

@@ -1,7 +1,8 @@
 import React from 'react'
 import '../css/projects.css'
+import projectBackground from '../images/project background.png'
+import iNotebookProject from '../images/iNotebook Project/adding and viewing notes.png'
 import img from '../images/projects.png'
-// import foodsite from '../images/foodsite.png'
 
 export default function Projects() {
     return (
@@ -15,9 +16,22 @@ export default function Projects() {
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
+                    <div className="carousel-item">
+                        <img src={projectBackground} className="d-block" alt="..." />
+                        <div className="carousel-caption d-md-block">
+                            <img src={iNotebookProject} className="d-block mb-3" alt="..." />
+                            <div className="project-content mt-3">
+                                <h6>iNoteBook</h6>
+                                <h4 className=''>Note Taking Website</h4>
+                                <p className=''>A note taking website with login-signup system.</p>
+                                <div className="project-btns d-flex justify-content-center">
+                                    <a target='_blank' href="https://github.com/jitinsingh000/iNotebook/tree/master"><button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Source Code</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="carousel-item active">
-                        {/* <img src={img} className="d-block" alt="..." /> */}
-                        <img src="https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg" className="d-block" alt="..." />
+                        <img src={projectBackground} className="d-block" alt="..." />
                         <div className="carousel-caption d-md-block">
                             <img src={img} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -25,15 +39,13 @@ export default function Projects() {
                                 <h4 className=''>Food Ordering Website</h4>
                                 <p className=''>A website created using MERN Stack.</p>
                                 <div className="project-btns d-flex justify-content-center">
-                                    <a href="https://github.com/jitinsingh000/GoFood"><button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Source Code Soon...</button></a>
-                                    {/* <button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Live</button> */}
+                                    <a target='_blank' href="https://github.com/jitinsingh000/GoFood"><button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Source Code Soon...</button></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        {/* <img src={img} className="d-block" alt="..." /> */}
-                        <img src="https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg" className="d-block" alt="..." />
+                        <img src={projectBackground} className="d-block" alt="..." />
                         <div className="carousel-caption d-md-block">
                             <img src={img} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -41,24 +53,7 @@ export default function Projects() {
                                 <h4 className=''>OTT Platform Website</h4>
                                 <p className=''>Cloned Netflix using MERN Stack.</p>
                                 <div className="project-btns d-flex justify-content-center">
-                                    <a href="https://github.com/jitinsingh000/Netflix-Clone"><button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Source Code Soon...</button></a>
-                                    {/* <button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Live</button> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        {/* <img src={img} className="d-block" alt="..." /> */}
-                        <img src="https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg" className="d-block" alt="..." />
-                        <div className="carousel-caption d-md-block">
-                            <img src={img} className="d-block mb-3" alt="..." />
-                            <div className="project-content mt-3">
-                                <h6>iNoteBook</h6>
-                                <h4 className=''>Note Taking Website</h4>
-                                <p className=''>A note taking website with login-signup system.</p>
-                                <div className="project-btns d-flex justify-content-center">
-                                    <a href="https://github.com/jitinsingh000/iNotebook"><button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Source Code Soon...</button></a>
-                                    {/* <button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Live</button> */}
+                                    <a target='_blank' href="https://github.com/jitinsingh000/Netflix-Clone"><button type="button" className='btn btn-dark mx-2 px-3 py-2' style={{ backgroundColor: 'black' }}>Source Code Soon...</button></a>
                                 </div>
                             </div>
                         </div>

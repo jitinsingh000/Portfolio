@@ -51,7 +51,7 @@
     color: white;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     color: #0072ef;
 }
 
@@ -230,6 +230,7 @@
     #navbar ul {
         gap: 1vw;
     }
+
     .nav-items li {
         margin: 0 10px;
     }
