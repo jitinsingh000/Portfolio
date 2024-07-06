@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -10,15 +10,27 @@ import Footer from './components/Footer';
 
 function App() {
 
+  const [showNavItems, setShowNavItems] = useState(false);
+
+  const toggleNavItems = () => {
+    setShowNavItems(!showNavItems);
+  };
+
+  const hideNavItems = () => {
+    setShowNavItems(false);
+  };
+
   return (
-    <div>
-      <Navbar />
-      <Home />
-      <Skills />
-      <Projects />
-      <Education />
-      <Contact />
-      <Footer />
+    <div className="App">
+      <Navbar showNavItems={showNavItems} toggleNavItems={toggleNavItems} />
+      <div className="portfolio-content" onClick={hideNavItems}>
+        <Home />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

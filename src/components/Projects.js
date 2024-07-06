@@ -9,16 +9,15 @@ export default function Projects() {
         <div id='projects'>
             <h1 className='pt-5 pb-2 text-decoration-underline text-center'><i className="fa-solid fa-list-check"></i> Projects <i className="fa-solid fa-list-check"></i></h1>
             <h5 className='pb-5 text-center'>My Works - project works I done using my skillset</h5>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
                     <img src={projectBackground} className="d-block" alt="..." />
-                    <div className="carousel-item">
-                        {/* <img src={projectBackground} className="d-block" alt="..." /> */}
+                    <div className="carousel-item active">
                         <div className="carousel-caption d-md-block">
                             <img src={iNotebookProject} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -31,8 +30,7 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div className="carousel-item active">
-                        {/* <img src={projectBackground} className="d-block" alt="..." /> */}
+                    <div className="carousel-item">
                         <div className="carousel-caption d-md-block">
                             <img src={img} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -46,7 +44,6 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        {/* <img src={projectBackground} className="d-block" alt="..." /> */}
                         <div className="carousel-caption d-md-block">
                             <img src={img} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -60,11 +57,11 @@ export default function Projects() {
                         </div>
                     </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
