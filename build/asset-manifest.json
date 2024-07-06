@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3b5e627e.css",
-    "main.js": "/portfolio/static/js/main.a6f02fac.js",
+    "main.js": "/portfolio/static/js/main.58c5e053.js",
     "static/media/jitin.jpg": "/portfolio/static/media/jitin.c01433626db77d2e163e.jpg",
     "static/media/js.png": "/portfolio/static/media/js.3efbd914d106d5808138.png",
     "static/media/redux.png": "/portfolio/static/media/redux.644089796aa5d37d729e.png",
@@ -9,10 +9,12 @@
     "static/media/x.png": "/portfolio/static/media/x.d4e0ec8dc0b154f3f7f6.png",
     "static/media/whatsapp.png": "/portfolio/static/media/whatsapp.c0dd3a40efc765e275e0.png",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.195057b1cb070ffa558d.png",
+    "static/media/adding and viewing notes.png": "/portfolio/static/media/adding and viewing notes.c50dc15cf6f40e912848.png",
     "static/media/projects.png": "/portfolio/static/media/projects.9977ce7428fca90fc955.png",
     "static/media/css.jpg": "/portfolio/static/media/css.35531828a2377abe55d9.jpg",
     "static/media/Git&GitHub.png": "/portfolio/static/media/Git&GitHub.505bed59b80139782cc8.png",
     "static/media/react-white.png": "/portfolio/static/media/react-white.19bf873b31eef22a8783.png",
+    "static/media/project background.png": "/portfolio/static/media/project background.f71f2015853837c19230.png",
     "static/media/github.png": "/portfolio/static/media/github.a008023cec817aec450d.png",
     "static/media/LogoJS.png": "/portfolio/static/media/LogoJS.3ef590764727257f694b.png",
     "static/media/ChromeDevToolsBlue.png": "/portfolio/static/media/ChromeDevToolsBlue.63ea0b08428a40724430.png",
@@ -21,10 +23,10 @@
     "static/media/insta.png": "/portfolio/static/media/insta.0589dbbc2b2bb1e3391b.png",
     "index.html": "/portfolio/index.html",
     "main.3b5e627e.css.map": "/portfolio/static/css/main.3b5e627e.css.map",
-    "main.a6f02fac.js.map": "/portfolio/static/js/main.a6f02fac.js.map"
+    "main.58c5e053.js.map": "/portfolio/static/js/main.58c5e053.js.map"
   },
   "entrypoints": [
     "static/css/main.3b5e627e.css",
-    "static/js/main.a6f02fac.js"
+    "static/js/main.58c5e053.js"
   ]
 }

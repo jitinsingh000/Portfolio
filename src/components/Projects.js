@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/projects.css'
 import projectBackground from '../images/project background.png'
-import iNotebookProject from '../images/iNotebook Project/adding and viewing notes.png'
+import iNotebookProject from '../images/iNotebook Project Images/adding and viewing notes.png'
 import img from '../images/projects.png'
 
 export default function Projects() {
@@ -16,8 +16,9 @@ export default function Projects() {
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div className="carousel-inner">
+                    <img src={projectBackground} className="d-block" alt="..." />
                     <div className="carousel-item">
-                        <img src={projectBackground} className="d-block" alt="..." />
+                        {/* <img src={projectBackground} className="d-block" alt="..." /> */}
                         <div className="carousel-caption d-md-block">
                             <img src={iNotebookProject} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -31,7 +32,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="carousel-item active">
-                        <img src={projectBackground} className="d-block" alt="..." />
+                        {/* <img src={projectBackground} className="d-block" alt="..." /> */}
                         <div className="carousel-caption d-md-block">
                             <img src={img} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">
@@ -45,7 +46,7 @@ export default function Projects() {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={projectBackground} className="d-block" alt="..." />
+                        {/* <img src={projectBackground} className="d-block" alt="..." /> */}
                         <div className="carousel-caption d-md-block">
                             <img src={img} className="d-block mb-3" alt="..." />
                             <div className="project-content mt-3">

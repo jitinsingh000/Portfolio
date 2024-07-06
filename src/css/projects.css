@@ -18,6 +18,11 @@
     border-radius: 15px;
 }
 
+.carousel-inner>img {
+    height: 75vh;
+    width: 90vw;
+}
+
 .project-btns button:hover {
     color: #0072ef;
 }
@@ -45,8 +50,15 @@
 }
 
 @media (max-width: 576px) {
+    body{
+        /* background-color: aquamarine; */
+    }
     #projects {
         width: 100vw;
+    }
+    
+    .carousel-inner>img {
+        height: 60vh;
     }
 
     .carousel-item>img {
@@ -54,7 +66,8 @@
     }
 
     .carousel-caption>img {
-        height: 40vh;
+        /* height: 40vh; */
+        height: auto;
     }
 
     .project-content {
@@ -75,8 +88,11 @@
 
     /* small */
     body {
-        /* background-color: black; */
-        /* color: white; */
+        background-color: black;
+        color: white;
+    }
+    .carousel-inner>img {
+        height: 75vh;
     }
 
     .carousel-item>img {
@@ -101,7 +117,9 @@
         /* background-color: red; */
     }
 
-
+    .carousel-inner>img {
+        height: 75vh;
+    }
     .carousel-item>img {
         height: 75vh;
     }
