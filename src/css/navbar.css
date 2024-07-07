@@ -61,6 +61,10 @@
     padding-left: 0;
 }
 
+#navbar ul li a{
+    font-size: larger;
+}
+
 .nav-items-div {
     display: flex;
     align-items: center;

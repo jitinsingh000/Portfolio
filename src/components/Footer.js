@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import '../css/footer.css'
-import github from '../images/logos/github.png'
-import linkedin from '../images/logos/linkedin.png'
-import insta from '../images/logos/insta.png'
-import x from '../images/logos/x.png'
-import whatsapp from '../images/logos/whatsapp.png'
-import telegram from '../images/logos/telegram.png'
+import github from '../images/logos/Footer Logos/github.png'
+import linkedin from '../images/logos/Footer Logos/linkedin.png'
+import insta from '../images/logos/Footer Logos/insta.png'
+import x from '../images/logos/Footer Logos/x.png'
+import whatsapp from '../images/logos/Footer Logos/whatsapp.png'
+import telegram from '../images/logos/Footer Logos/telegram.png'
 
 export default function Footer() {
 
