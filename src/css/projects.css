@@ -102,7 +102,7 @@
     }
 
     .carousel-caption>img {
-        height: 40vh;
+        height: auto;
     }
 
     .project-content {

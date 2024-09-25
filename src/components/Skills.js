@@ -23,6 +23,7 @@ import chromeDevTools from '../images/logos/ChromeDevToolsBlue.png'
 
 export default function Skills() {
 
+    // animation js
     const [animatedSections, setAnimatedSections] = useState([]);
 
     useEffect(() => {
@@ -136,7 +137,7 @@ export default function Skills() {
                                     <p>Chrome DevTools</p>
                                 </div>
                                 <div className='d-flex flex-column  text-center'>
-                                    <img src={gitNGithub} alt="" className='mx-auto' /* style={{border:'5px solid #161716',borderRadius:'50%'}} *//>
+                                    <img src={gitNGithub} alt="" className='mx-auto' /* style={{border:'5px solid #161716',borderRadius:'50%'}} */ />
                                     <p>Git & GitHub</p>
                                 </div>
                             </div>

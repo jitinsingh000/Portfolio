@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 
 function App() {
 
+
+  // To hide or show hamburger menu or close button on Portrait Devices
   const [showNavItems, setShowNavItems] = useState(false);
 
   const toggleNavItems = () => {

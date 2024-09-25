@@ -9,6 +9,7 @@ import telegram from '../images/logos/Footer Logos/telegram.png'
 
 export default function Footer() {
 
+    // animation js
     const [animatedSections, setAnimatedSections] = useState([]);
 
     useEffect(() => {

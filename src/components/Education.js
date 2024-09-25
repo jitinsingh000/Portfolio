@@ -3,6 +3,7 @@ import '../css/education.css'
 
 export default function Education() {
 
+    // animation js
     const [animatedSections, setAnimatedSections] = useState([]);
 
     useEffect(() => {

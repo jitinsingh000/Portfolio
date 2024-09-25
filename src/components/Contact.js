@@ -3,53 +3,55 @@ import '../css/contact.css';
 
 export default function Contact() {
 
-    const [data, setData] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-    });
+    // JS to handle contact form
 
-    const onChange = (event) => {
-        // console.log(event.target);
-        setData({ ...data, [event.target.name]: event.target.value })
-    }
+    // const [data, setData] = useState({
+    //     name: "",
+    //     email: "",
+    //     subject: "",
+    //     message: ""
+    // });
 
-    const onSubmitHandler = async (event) => {
-        event.preventDefault();
-        try {
-            const message = {
-                name: data.name,
-                email: data.email,
-                subject: data.subject,
-                message: data.message
-            }
-            const response = await fetch(`http://127.0.0.1:5000/message`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(message),
-            });
-            const json = await response.json();
+    // const onChange = (event) => {
+    //     // console.log(event.target);
+    //     setData({ ...data, [event.target.name]: event.target.value })
+    // }
 
-            if (!json.success) {
-                alert("Failed - Message Not Sent");
-            } else {
-                alert("Message Sent Successfully");
-                setData({
-                    name: "",
-                    email: "",
-                    subject: "",
-                    message: ""
-                })
-            }
-        }
-        catch (err) {
-            console.log(err)
-        }
+    // const onSubmitHandler = async (event) => {
+    //     event.preventDefault();
+    //     try {
+    //         const message = {
+    //             name: data.name,
+    //             email: data.email,
+    //             subject: data.subject,
+    //             message: data.message
+    //         }
+    //         const response = await fetch(`http://127.0.0.1:5000/message`, {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json"
+    //             },
+    //             body: JSON.stringify(message),
+    //         });
+    //         const json = await response.json();
 
-    }
+    //         if (!json.success) {
+    //             alert("Failed - Message Not Sent");
+    //         } else {
+    //             alert("Message Sent Successfully");
+    //             setData({
+    //                 name: "",
+    //                 email: "",
+    //                 subject: "",
+    //                 message: ""
+    //             })
+    //         }
+    //     }
+    //     catch (err) {
+    //         console.log(err)
+    //     }
+
+    // }
 
     // animation js
     const [animatedSections, setAnimatedSections] = useState([]);
